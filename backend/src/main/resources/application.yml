@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: sales-lens
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:sales_lens}
+    username: ${DB_USER:sales_lens}
+    password: ${DB_PASSWORD:dev-only-password}
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+server:
+  port: ${SERVER_PORT:8080}
