@@ -1,0 +1,30 @@
+{
+  "name": "sales-lens-frontend",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "engines": {
+    "node": "20.x",
+    "npm": "10.x"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "test": "vitest --environment jsdom --passWithNoTests",
+    "typecheck": "tsc --noEmit --jsx react-jsx --lib DOM,ES2022 --module ESNext --moduleResolution bundler --target ES2022 src/app/main.tsx"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "4.3.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "vite": "5.4.14"
+  },
+  "devDependencies": {
+    "@testing-library/react": "16.1.0",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "jsdom": "25.0.1",
+    "typescript": "5.7.3",
+    "vitest": "2.1.9"
+  }
+}
